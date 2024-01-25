@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 80vw;
+	margin: auto;
+	.navbar {
+		ul {
+			display: flex;
+			list-style-type: none;
+			gap: 2rem;
+			li {
+				a {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
