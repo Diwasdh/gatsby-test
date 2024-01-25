@@ -13,9 +13,19 @@ const Seo = ({ title }) => {
 	`);
 
 	return (
-		<title>
-			{title} | {data.site.siteMetadata.title}
-		</title>
+		<>
+			<title>
+				{title} | {data.site.siteMetadata.title}
+			</title>
+			<meta
+				name="title"
+				content={`${title} | ${data.site.siteMetadata.title}`}
+			/>
+			<meta
+				name="description"
+				content={`${title} | ${data.site.siteMetadata.title} page`}
+			/>
+		</>
 	);
 };
 
